@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen40"
+            android:src="@drawable/ic_welcome_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:gravity="center"
+            android:text="@string/silahkan_mengisi"
+            android:textSize="@dimen/dimen18"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_top"
+
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen30"
+        android:layout_marginLeft="@dimen/dimen30"
+        android:layout_marginTop="@dimen/dimen30"
+        android:layout_marginEnd="@dimen/dimen30"
+        android:layout_marginRight="@dimen/dimen30"
+        android:gravity="left"
+        android:text="@string/nama_panggilan"
+        android:textSize="@dimen/font16"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginLeft="@dimen/dimen300"
+            android:layout_marginTop="@dimen/dimen1"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:layout_marginRight="@dimen/dimen30"
+            android:hint="@string/isi_nama"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/font14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:layout_marginRight="@dimen/dimen30"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:gravity="left"
+            android:text="@string/jenis_kelamin"
+            android:textSize="@dimen/font16"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen30"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:layout_marginRight="@dimen/dimen30"
+            android:gravity="left"
+            android:text="@string/umur"
+            android:textSize="@dimen/font16"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginLeft="@dimen/dimen300"
+            android:layout_marginTop="@dimen/dimen1"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:layout_marginRight="@dimen/dimen300"
+            android:hint="@string/contoh"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:textSize="@dimen/font14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen5"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:gravity="left"
+            android:text="@string/umur_diperlukan"
+            android:textSize="@dimen/font12"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_middle"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:layout_marginRight="@dimen/dimen30"
+            android:background="@drawable/bg_btn_daftar"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/daftar"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dimen20"
+             />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

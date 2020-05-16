@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgHome">
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen200"
+            android:layout_marginTop="@dimen/dimen40"
+            android:src="@drawable/ic_welcome_parent"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:gravity="center"
+            android:text="@string/selamat"
+            android:textSize="@dimen/dimen14"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHallo"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            android:gravity="center"
+            android:text="@string/selamat"
+            android:textSize="@dimen/dimen14"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_login_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60"
+            android:layout_marginStart="@dimen/dimen80"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_marginEnd="@dimen/dimen80"
+            android:layout_marginRight="@dimen/dimen50"
+            android:layout_marginBottom="@dimen/dimen30"
+            android:background="@drawable/bg_btn_code"
+            android:textColor="@color/colorDaftar"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/code"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_top"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="@dimen/dimen40"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen40"
+            android:layout_marginRight="@dimen/dimen50"
+            android:gravity="center"
+            android:text="@string/bingung"
+            android:textSize="@dimen/dimen20"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60"
+            android:layout_marginStart="@dimen/dimen80"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginTop="@dimen/dimen30"
+            android:layout_marginEnd="@dimen/dimen80"
+            android:layout_marginRight="@dimen/dimen50"
+            android:layout_marginBottom="@dimen/dimen60"
+            android:background="@drawable/bg_btn_daftar"
+            android:textColor="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/tutorial"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
